@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nockmarket- PHP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="docs.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap-button.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="js/nockclient.js"></script>
+
+
+</head>
+<body>
+
+<div id="loginModal" class="modal hide fade smallModal">
+<form id="login-form" action="login.php" method="post" class="form-horizontal">
+<div class="modal-header">
+<a data-dismiss="modal" class="close"></a>
+<h3>Log In</h3>
+</div>
+<div class="modal-body">
+<fieldset>
+<div class="control-group">
+<input type="text" name="username" placeholder="Username" class="input-xlarge"/>
+</div>
+<div class="control-group">
+<input type="password" name="password" placeholder="Password" class="input-xlarge"/>
+</div>
+</fieldset>
+</div>
+<div class="modal-footer">
+<a href="#" data-dismiss="modal" class="btn">Close</a>
+<button class="btn btn-primary" type="submit">Log In</button>
+</div>
+</form>
+</div>
+
+
+
+<div id="myModal" class="modal hide fade smallModal">
+<form id="signup-form" action="signup.php" method="post" class="form-horizontal">
+<div class="modal-header"><a data-dismiss="modal" class="close"></a>
+<h3>Sign Up Today</h3></div>
+<div class="modal-body">
+<fieldset>
+<div class="control-group">
+<input type="text" name="username" placeholder="Username" class="input-xlarge uname"/>
+<span id="imagePlaceHolder"></span>
+</div>
+<div class="control-group">
+<input type="text" name="email" placeholder="Email" class="input-xlarge"/>
+</div>
+<div class="control-group">
+<input type="password" name="password" placeholder="Password" class="input-xlarge"/>
+</div>
+</fieldset>
+</div>
+<div class="modal-footer"><a href="#" data-dismiss="modal" class="btn">Close</a>
+<button class="btn btn-primary create-button" type="submit">Create Account</button>
+</div>
+</form>
+</div>
+
+
+<div class="container">
+<div class="marketing"><h1>Nockmarket in PHP</h1>
+<p class="marketing-byline">Welcome to the PHP
+stockmarket</p>
+<div class="row offset2">
+<div class="span4">
+<h2>Real Prices</h2>
+<p>Here you will be able to sign up for an account and
+create a stock portfolio with live prices. 
+</p>
+</div>
+<div class="span4">
+<h2>Live Data</h2>
+<p>We will also construct a dummy portfolio to show you how
+real-time data is streamed straight into your browser.</p>
+</div>
+</div>
+</div>
+<header class="jumbotron masthead">
+<div class="inner">
+<p class="download-info">
+<a data-toggle="modal" href="#loginModal" class="btn btn-large">Log In</a>
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Sign Up</a>
+</p>
+</div>
+</header>
+</div>
+</body>
+</html>
